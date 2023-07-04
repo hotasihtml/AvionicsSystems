@@ -318,7 +318,7 @@ namespace AvionicsSystems
             InitResourceData();
 
             UpdateReferenceTransform(vessel.GetReferenceTransformPart(), true);
-            vesselCrewed = (vessel.GetCrewCount() > 0);
+            vesselCrewed = true;
             vesselActive = ActiveVessel(vessel);
             if (vesselCrewed)
             {
